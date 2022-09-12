@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">  <!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">  <!--Para que se vea bien el responsive en disp moviles-->
+    <title>Proyecto #YoProgramo</title>
+    <!-- Bootstrap CSS CDN-->
+    <link 
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" 
+    rel="stylesheet" 
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" 
+    crossorigin="anonymous">
+ 
+        <!--    REFRESH PAGE PARA AHORRARME F5s  
+        <meta http-equiv="refresh" content="2" /> -->
+
+<!--SCRIPST-->
+        <script type="text/javascript" src="/main.js" defer></script>
+<!--SCRIPST-->
+    </head>
+  
+    <body>
+
+<!-- LOGIN CODE -->
+        <div class="container" id="login-container" style="">
+
+
+        </div>
+<!-- LOGIN CODE -->
+
+    
+    <div class="main container " id="main">
+        <header class="header" id="header"> 
+<!-- HEADER CONTENT -->
+            <nav class="navbar">
+                <div class="container rounded bg-dark " style="margin-bottom: 5px">
+                    <a class="navbar-brand text-white " href="#">
+                        <img src="https://argentinaprograma.inti.gob.ar/pluginfile.php/1/theme_moove/logo/1659143423/APLogo-20-20.png" alt="" width="70" height=auto class="d-inline-block align-text-middle">
+                        Argentina Programa #YoProgramo
+                    </a>
+                    <!-- Botones darkmode -->
+                    
+                        <div id="container">
+                            <form onsubmit="return false">
+                                <input type="submit" value="Darkmode" class="btn btn-success" id="darkmode_button" onclick="darkmode(); return" />
+                            </form>
+                        </div> 
+                    
+                    <!-- Botones Redes sociales -->
+
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/800px-Facebook_Logo_%282019%29.png" class="img-fluid" alt="" style="max-height:40px"> 
+                        <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" class="img-fluid" alt="" style="max-height:40px"> 
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/768px-Instagram_logo_2016.svg.png" class="img-fluid" alt="" style="max-height:40px"> 
+                     
+                    <!-- Boton de login -->   
+                    
+                        
+                        <!-- Login dropstart button -->
+                        <div class="btn-group dropdown-menu bg-dark" id="campoDeLogeo" style="display:flexbox">
+                            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="etiqueta-de-boton-login">
+                                Login
+                            </button>
+                            <div class="dropdown-menu " Style="margin-top: 10px; display:flexbox" id="registro">
+                                <form>
+                                    <div class="container">
+                                        <label for="emailInput" class="form-label">Email</label>
+                                        <input type="email" class="form-control" id="InputEmail" aria-describedby="emailHelp">
+                                    </div>
+                                    <div class="container">
+                                        <label for="exampleInputPassword1" class="form-label">Password</label>
+                                        <input type="password" class="form-control" id="InputPassword">
+                                    </div>
+                                    <div class="containter form-check ">
+                                        <input type="checkbox" class="form-check-input" id="Check">
+                                        <label class="form-check-label" for="Check">Check me out</label>
+                                    </div>
+                                    <input type="button" value="submit" class="dropdown-item" onclick="login(); return" />
+                                </form>
+                            </div>
+                        </div>  
+                </div>
+            </nav>       
+        </header>
+
+<!-- Aca comienzan las secciones del sitio -->  
+
+<!-- BANNER -->
+            <div class="container rounded p-3 mb-2 bg-light text-black"  id="banner" style="display:block">                         
+                <div class="row">
+                    <div class="col">
+                        <div class="position-relative">
+                            <img src="https://media-exp1.licdn.com/dms/image/C5616AQEnkM8eTbDjBg/profile-displaybackgroundimage-shrink_350_1400/0/1661353255935?e=1666828800&v=beta&t=qwrpQ-bbKwQxfJJZefmvkheLJCxhYQ-XFZsObUpKrpA" class="rounded" alt="" style="max-width: 100%;"> 
+                            <div class="position-absolute bottom-1 start-30 translate-middle-y center">
+                                <img src="https://media-exp1.licdn.com/dms/image/C5603AQG2woWIFHsI7g/profile-displayphoto-shrink_400_400/0/1661354910706?e=1666828800&v=beta&t=rb_Ve71wIT0Js6nv9X7GsEmgofyh6gB8UgSr2VxlZio" class="rounded-circle" alt="" style="max-width:150px" border="5"> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-5 align-items-bottom">
+                    <div class="col">
+                        
+                        <br><!-- Esta es una solucion muy fea, pero por ahora la unica que tengo, va de la mano con mt5 -->
+                        <strong></strong><h1> Julio C. E. Faccio</strong></h1>
+                        <h3> Full Stack Dev Jr. </h3><br>
+                        <h3> Buenos Aires (Argentina) Informacion de contacto</h3><br>
+                        
+
+
+                        <!-- <button type="button" class="btn btn-primary">Tengo interes en</button> Que se supone que haga esto?-->
+                        <!-- Default dropup button -->
+                        <div class="btn-group dropup" style="display: none" id="BtnActivarSecciones">
+                            <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Activar seccion
+                            </button>
+                            <div class="dropdown-menu">
+                                <!-- Dropdown menu links -->
+                                <form onsubmit="return false">
+                                    <input type="submit" value="About" class="dropdown-item" onclick="toggle('about'); return" />
+                                    <input type="submit" value="Experiencia Laboral" class="dropdown-item" onclick="toggle('exp'); return" />
+                                    <input type="submit" value="Educacion" class="dropdown-item" onclick="toggle('edu'); return" />
+                                    <input type="submit" value="Hard & Soft Skills" class="dropdown-item" onclick="toggle('skills'); return" />
+                                    <input type="submit" value="Proyectos" class="dropdown-item" onclick="toggle('proy'); return" />
+                                </form>
+                          </div>
+                        <!-- <button type="button" class="btn btn-secondary">Mas</button> Que se supone que haga esto? -->
+                     
+
+
+                    </div>
+            </div>
+            </div>                                                 
+        </div>           
+    </div>
+
+<!-- ABOUT -->
+       
+                <div class="container rounded p-3 mb-2 bg-light text-black" id="about" style="display:block" >
+                    <input type="image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/UniversalEditButton3.svg/1200px-UniversalEditButton3.svg.png" class="img-fluid" alt="" style="max-height:40px" onclick="edit('about');return">
+                    <input type="image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Check_green_icon.svg/2048px-Check_green_icon.svg.png" class="img-fluid" alt="" style="max-height:40px" onclick="save('about');return">
+                    <input type="image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Delete-button.svg/1725px-Delete-button.svg.png" class="img-fluid" alt="" style="max-height:40px" onclick="del('about');return">
+                    <strong><p contenteditable="false"><h1>About</h1></p></strong>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut felis non mauris ultrices vestibulum vel a erat. Donec pretium turpis vitae venenatis vulputate. Morbi eu malesuada felis. Curabitur vulputate id lorem sed maximus. Pellentesque ultricies tortor nec dictum porta. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam ipsum magna, faucibus vitae urna sed, placerat placerat justo. Ut eros augue, pharetra nec aliquam nec, blandit vitae lectus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut eget nunc ultricies, mollis augue non, semper arcu. Cras dictum neque auctor sagittis eleifend. In elementum venenatis auctor.</p>
+                </div>
+
+<!-- EXPERIENCIA LABORAL-->
+                <div class="container rounded p-3 mb-2 bg-light text-black" id="exp" style="display:none">
+                    <div class="row align-items-center" >
+                        <strong><p><h1>Experiencia Laboral</h1></p></strong>
+                        <div class="col-auto">
+                            <img src="https://cdn-icons-png.flaticon.com/512/49/49360.png?w=360" class="rounded" alt="" style="max-width:120px"> 
+                        </div>
+                        <div class="col-auto ">
+                            <p><strong><h3>Nombre del puesto</h3></strong>
+                            Nombre de la empresa - Tipo de jornada<br>
+                            Duracion <br>
+                            Lugar del trabajo<br>
+                            </p>
+                        </div>    
+                        </div>
+                        <div class="row">
+                            <div class="col-auto">
+                                <br>
+                                <li><strong>Tarea 1:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut felis non mauris ultrices vestibulum vel a erat.</li>
+                                <li><strong>Tarea 1:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut felis non mauris ultrices vestibulum vel a erat.</li>
+                                <li><strong>Tarea 1:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut felis non mauris ultrices vestibulum vel a erat.</li>
+                            </div>
+                        </div>
+                    </div>
+                
+        
+
+<!-- EDUCACION -->
+
+        <div class="container rounded p-3 mb-2 bg-light text-black" id="edu" style="display:none">
+            <div class="row align-items-center" >
+                <strong><p><h1>Educacion</h1></p></strong>
+                <div class="col-auto">
+                    <img src="https://cdn-icons-png.flaticon.com/512/49/49360.png?w=360" class="rounded" alt="" style="max-width:120px"> 
+                </div>
+                <div class="col-auto ">
+                    <p><strong><h3>Nombre de la institucion</h3></strong>
+                    Titulo obtenido<br>
+                    Desde xxxx hasta yyyy <br>
+                    </p>
+                </div>    
+            </div>
+        </div>
+    
+
+<!-- HARD & SOFT SKILLS-->
+                <div class="container rounded p-3 mb-2 bg-light text-black" id="skills" style="display:none">
+                    <strong><p><h1>Hard & Soft Skills</h1></p></strong>
+                    <div class="row mt-4" >
+                        <div class="col-12">
+                            <p class="text" style="align-center"><strong>Soft skill #1</strong></p>
+                            <div class="progress" style="height: 3em">
+                                <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">100%</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-4"  >
+                        <div class="col-12">
+                            <p class="text" style="align-center"><strong>Soft skill #2</strong></p>
+                            <div class="progress" style="height: 3em">
+                                <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-4"  >
+                        <div class="col-12">
+                            <p class="text" style="align-center"><strong>Soft skill #3</strong></p>
+                            <div class="progress" style="height: 3em">
+                                <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+<!-- PROYECTOS -->
+                <div class="container rounded p-3 mb-2 bg-light text-black" id="proy" style="display:none">
+                    <strong><p><h1>PROYECTOS</h1></p></strong>
+                    <div class="row">
+                        <div class="col">
+                            <p><strong><h2>Nombre del proyecto</h2></strong></p>
+                            <p>Fecha del proyecto</p>
+                            <p>Descripcion: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut felis non mauris ultrices vestibulum vel a erat. Donec pretium turpis vitae venenatis vulputate. Morbi eu malesuada felis. Curabitur vulputate id lorem sed maximus. Pellentesque ultricies tortor nec dictum porta. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam ipsum magna, faucibus vitae urna sed, placerat placerat justo. Ut eros augue, pharetra nec aliquam nec, blandit vitae lectus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut eget nunc ultricies, mollis augue non, semper arcu. Cras dictum neque auctor sagittis eleifend. In elementum venenatis auctor.</p>
+                            <a href="index.html" target="_blank"><strong>Link al contenido</strong>
+                        </div>
+                    <div class="row mt-5 justify-content-center">
+                        <div class="col ">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Example.jpg?20100314172020" class="img-responsive" style="max-width: 100% alt="Images" />
+                        </div>
+                        <div class="col">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Example.jpg?20100314172020" class="img-responsive" style="max-width: 100% alt="Images" />
+                        </div>
+                        <div class="col">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Example.jpg?20100314172020" class="img-responsive" style="max-width: 100% alt="Images" />
+                        </div>
+                    </div>
+                    
+                        </div>
+                    </div>
+              
+    </div>
+<!-- ACA TERMINAN LAS SECCIONES DEL SITIO-->
+
+
+<!-- TESTING AREA PROCEED WITH CAUTION ------------------------------------------------------------------------------------------------------>
+
+<!-- SECCION GENERICA DE TESTEO -->
+       
+<section class="container rounded p-3 mb-2 bg-light text-black" id="testeo" style="display:block" >
+        <input type="image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Edit_icon_%28the_Noun_Project_30184%29.svg/1024px-Edit_icon_%28the_Noun_Project_30184%29.svg.png" class="img-fluid" alt="" style="max-height:40px" onclick="newEdit('testeo');return">
+    <div class="titulo-seccion">
+        <strong><p contenteditable="false"><h1>About</h1></p></strong>
+    </div>
+    <div class="contenido-seccion">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut felis non mauris ultrices vestibulum vel a erat. Donec pretium turpis vitae venenatis vulputate. Morbi eu malesuada felis. Curabitur vulputate id lorem sed maximus. Pellentesque ultricies tortor nec dictum porta. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam ipsum magna, faucibus vitae urna sed, placerat placerat justo. Ut eros augue, pharetra nec aliquam nec, blandit vitae lectus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut eget nunc ultricies, mollis augue non, semper arcu. Cras dictum neque auctor sagittis eleifend. In elementum venenatis auctor.</p>
+    </div>
+</section>
+
+<a href="file:///C:\Users\Faziten\Downloads\51.0.12-PVP.7z">Link 1</a>
+
+<!--
+<div class="col-auto me-auto"> PARA QUE SE MANTENGAN SEPARADAS AUTOMATICAENTE
+<button type="button" class="btn btn-secondary">Agregar Seccion</button> EL BOTON VIEJO
+<input type="submit" value="Login" class="btn btn-primary" id="login_button" onclick="doSomething(); return" />
+filler
+-->
+<!-- TESTING AREA PROCEED WITH CAUTION -->
+
+
+        <!-- Bootstrap required CDNs-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </body>
+
+</html>
