@@ -1,27 +1,27 @@
 <div class="card mat-card" id="first-card">
-    <div id="profile-background"><img id="info-back-img" src={{miPortfolio.backImage}}></div>
+    <div id="profile-background"><img id="info-back-img" [src]=miPortfolio.Persona[0].backImage></div> <!--no requiere interpolacion porque estoy usando directiva de angular [src]-->
     <div id="info" style="padding: 16px">
       <div id="info-img">
-        <img id="info-user-img" class="profile-image" src={{miPortfolio.image}}>
+        <img id="info-user-img" class="profile-image" [src]=miPortfolio.Persona[0].image>
         <div class="btn-edit"><a href="#" class="btn-right"><i class="fa fa-pen" onclick="showEditProfileModal()"></i></a></div>
       </div>
       <div id="info-data">
         <div>
-          <h1 id="info-name">{{miPortfolio.fullName}}</h1>
-          <div><span id="info-position">{{miPortfolio.position}}</span> en <span id="info-company">{{miPortfolio.organization}}</span></div>
+          <h1 id="info-name">{{miPortfolio.Persona[0].fullName}}</h1>
+          <div><span id="info-position">{{miPortfolio.Persona[0].position}}</span> en <span id="info-company">{{miPortfolio.Persona[0].organization}}</span></div>
           <div id="info-contact">
-            <span id="info-ubication">{{miPortfolio.ubication}}</span>
+            <span id="info-ubication">{{miPortfolio.Persona[0].ubication}}</span>
             <span><a href="#">Información de contacto</a></span>
           </div>
         </div>
         <ul id="info-details">
           <li><a href="#">
-            <img id="info-company-img" src={{miPortfolio.uni1Icon}}>
-            <h2 id="info-company-name">{{miPortfolio.uni1}}</h2>
+            <img id="info-company-img" [src]=miPortfolio.Persona[0].uni1Icon>
+            <h2 id="info-company-name">{{miPortfolio.Persona[0].uni1}}</h2>
           </a></li>
           <li><a href="#">
-            <img id="info-school-img" src={{miPortfolio.uni2Icon}}>
-            <h2 id="info-school-name">{{miPortfolio.uni2}}</h2>
+            <img id="info-school-img" [src]=miPortfolio.Persona[0].uni2Icon>
+            <h2 id="info-school-name">{{miPortfolio.Persona[0].uni2}}</h2>
           </a></li>
         </ul>
       </div>
