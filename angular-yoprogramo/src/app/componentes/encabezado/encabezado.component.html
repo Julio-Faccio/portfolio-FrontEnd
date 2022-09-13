@@ -1,0 +1,34 @@
+<div class="card mat-card" id="first-card">
+    <div id="profile-background"><img id="info-back-img" src={{miPortfolio.backImage}}></div>
+    <div id="info" style="padding: 16px">
+      <div id="info-img">
+        <img id="info-user-img" class="profile-image" src={{miPortfolio.image}}>
+        <div class="btn-edit"><a href="#" class="btn-right"><i class="fa fa-pen" onclick="showEditProfileModal()"></i></a></div>
+      </div>
+      <div id="info-data">
+        <div>
+          <h1 id="info-name">{{miPortfolio.fullName}}</h1>
+          <div><span id="info-position">{{miPortfolio.position}}</span> en <span id="info-company">{{miPortfolio.organization}}</span></div>
+          <div id="info-contact">
+            <span id="info-ubication">{{miPortfolio.ubication}}</span>
+            <span><a href="#">Información de contacto</a></span>
+          </div>
+        </div>
+        <ul id="info-details">
+          <li><a href="#">
+            <img id="info-company-img" src={{miPortfolio.uni1Icon}}>
+            <h2 id="info-company-name">{{miPortfolio.uni1}}</h2>
+          </a></li>
+          <li><a href="#">
+            <img id="info-school-img" src={{miPortfolio.uni2Icon}}>
+            <h2 id="info-school-name">{{miPortfolio.uni2}}</h2>
+          </a></li>
+        </ul>
+      </div>
+      <div id="info-actions">
+        <button type="button" class="btn btn-primary">Tengo interés en</button>
+        <button type="button" class="btn btn-light">Añadir Sección</button>
+        <button type="button" class="btn btn-light">Más</button>
+      </div>
+    </div>
+</div>

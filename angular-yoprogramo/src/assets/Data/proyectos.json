@@ -1,0 +1,31 @@
+{
+	"Proyectos": [
+		{
+			"name": "Portfolio Web FullStack",
+			"mesInicio": "Enero",
+			"AñoInicio": "2001",
+			"mesFin": "Enero",
+			"AñoFin": "2001",
+			"url": "",
+			"Descripcion": "Proyecto trabajndo en desarrollo fullstack"
+		},
+		{
+			"name": "Mercado Libre",
+			"mesInicio": "Enero",
+			"AñoInicio": "2001",
+			"mesFin": "Enero",
+			"AñoFin": "2001",
+			"url": "",
+			"Descripcion": "Proyecto trabajndo en frontend"
+		},
+		{
+			"name": "INTI",
+			"mesInicio": "Enero",
+			"AñoInicio": "2001",
+			"mesFin": "Enero",
+			"AñoFin": "2001",
+			"url": "",
+			"Descripcion": "Proyecto trabajndo en backend"
+		}
+	]
+}
